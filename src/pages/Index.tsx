@@ -17,7 +17,7 @@ const Index = () => {
       <Navigation />
       <SocialSidebar />
       
-      <main className="max-w-7xl mx-auto overflow-hidden">
+      <main className="max-w-7xl mx-auto overflow-hidden px-4 sm:px-6">
         <Hero />
         <About />
         <Skills />

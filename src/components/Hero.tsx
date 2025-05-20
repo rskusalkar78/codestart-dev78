@@ -1,11 +1,12 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16">
-      <div className="max-w-4xl">
+    <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-between pt-16 gap-8">
+      <div className="max-w-2xl">
         <p className="font-mono text-portfolio-green mb-5 animate-fade-in opacity-0">Hi, my name is</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-lightestSlate mb-4 animate-fade-in opacity-0" style={{ animationDelay: '100ms' }}>
           John Doe.
@@ -24,6 +25,15 @@ const Hero: React.FC = () => {
           >
             <a href="#projects">Check out my work!</a>
           </Button>
+        </div>
+      </div>
+      <div className="md:w-1/3 animate-fade-in opacity-0" style={{ animationDelay: '500ms' }}>
+        <div className="relative">
+          <div className="absolute -inset-1 rounded-full bg-portfolio-green opacity-50 blur-sm"></div>
+          <Avatar className="w-72 h-72 mx-auto">
+            <AvatarImage src="/lovable-uploads/c1958b3c-253b-489e-88c6-3492f7a0dc9b.png" alt="John Doe" className="object-cover" />
+            <AvatarFallback className="text-4xl">JD</AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </section>
