@@ -48,7 +48,7 @@ const Navigation: React.FC = () => {
       )}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
-        <a href="#" className="text-3xl font-bold text-portfolio-green animate-fade-in opacity-0 font-mono">JD.</a>
+        <a href="#" className="text-3xl font-bold text-portfolio-green animate-fade-in opacity-0 font-mono">profilet</a>
         
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center space-x-2">

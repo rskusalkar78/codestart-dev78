@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
         <div className="relative">
           <div className="absolute -inset-1 rounded-full bg-portfolio-green opacity-50 blur-sm"></div>
           <Avatar className="w-72 h-72 mx-auto">
-            <AvatarImage src="/lovable-uploads/c1958b3c-253b-489e-88c6-3492f7a0dc9b.png" alt="Rohan Shankar Kusalkar" className="object-cover" />
+            <AvatarImage src="/lovable-uploads/a0cd5572-61aa-4261-a065-8a5ae61652fb.png" alt="Rohan Shankar Kusalkar" className="object-cover" />
             <AvatarFallback className="text-4xl">RSK</AvatarFallback>
           </Avatar>
         </div>
