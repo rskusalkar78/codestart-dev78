@@ -3,10 +3,10 @@
 1 0 obj
 <<
 /Title (Resume)
-/Author (John Doe)
+/Author (Rohan Shankar Kusalkar)
 /Subject (Developer Resume)
 /Keywords (software developer, web developer, frontend, resume)
-/Creator (John Doe)
+/Creator (Rohan Shankar Kusalkar)
 /Producer (Sample PDF Creator)
 /CreationDate (D:20230515120000)
 >>
@@ -43,7 +43,7 @@ stream
 BT
 /F1 24 Tf
 50 700 Td
-(John Doe) Tj
+(Rohan Shankar Kusalkar) Tj
 /F1 12 Tf
 0 -20 Td
 (Software Developer) Tj
@@ -70,13 +70,13 @@ BT
 0 -40 Td
 (CONTACT) Tj
 0 -20 Td
-(Email: contact@johndoe.com) Tj
+(Email: rkusalkar78@gmail.com) Tj
 0 -15 Td
-(Phone: (555) 123-4567) Tj
+(Phone: +91 8446300815) Tj
 0 -15 Td
-(Website: johndoe.dev) Tj
+(Website: rohankusalkar.dev) Tj
 0 -15 Td
-(GitHub: github.com/johndoe) Tj
+(GitHub: github.com/rohankusalkar) Tj
 ET
 endstream
 endobj

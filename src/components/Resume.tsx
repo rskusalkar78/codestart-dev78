@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -57,7 +56,7 @@ const Resume: React.FC = () => {
           variant="outline"
           className="border border-portfolio-green text-portfolio-green hover:bg-portfolio-green/10 py-3 px-5 flex items-center gap-2 whitespace-nowrap"
         >
-          <a href="/resume.pdf" download="John_Doe_Resume.pdf">
+          <a href="/resume.pdf" download="Rohan_Shankar_Kusalkar_Resume.pdf">
             <Download className="w-4 h-4" />
             Download Resume
           </a>

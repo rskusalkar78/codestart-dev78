@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
         </a>
       </div>
       <p className="text-portfolio-slate text-sm font-mono">
-        Designed & Built by John Doe
+        Designed & Built by Rohan Shankar Kusalkar
       </p>
       <p className="text-portfolio-slate text-sm font-mono mt-1">
         &copy; {currentYear} All Rights Reserved
