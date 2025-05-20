@@ -1,0 +1,109 @@
+
+%PDF-1.4
+1 0 obj
+<<
+/Title (Resume)
+/Author (John Doe)
+/Subject (Developer Resume)
+/Keywords (software developer, web developer, frontend, resume)
+/Creator (John Doe)
+/Producer (Sample PDF Creator)
+/CreationDate (D:20230515120000)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Kids [4 0 R]
+/Count 1
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 612 792]
+/Contents 5 0 R
+/Resources <<
+  /Font <<
+    /F1 6 0 R
+  >>
+>>
+>>
+endobj
+5 0 obj
+<< /Length 676 >>
+stream
+BT
+/F1 24 Tf
+50 700 Td
+(John Doe) Tj
+/F1 12 Tf
+0 -20 Td
+(Software Developer) Tj
+0 -40 Td
+(EXPERIENCE) Tj
+0 -20 Td
+(Senior Frontend Developer - Tech Solutions Inc.) Tj
+0 -15 Td
+(January 2021 - Present) Tj
+0 -15 Td
+(- Lead the development of React-based SaaS platform) Tj
+0 -40 Td
+(Frontend Developer - Web Creations) Tj
+0 -15 Td
+(March 2018 - December 2020) Tj
+0 -15 Td
+(- Developed responsive web applications using React) Tj
+0 -40 Td
+(EDUCATION) Tj
+0 -20 Td
+(Bachelor of Science in Computer Science) Tj
+0 -15 Td
+(University of Technology, 2020) Tj
+0 -40 Td
+(CONTACT) Tj
+0 -20 Td
+(Email: contact@johndoe.com) Tj
+0 -15 Td
+(Phone: (555) 123-4567) Tj
+0 -15 Td
+(Website: johndoe.dev) Tj
+0 -15 Td
+(GitHub: github.com/johndoe) Tj
+ET
+endstream
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000211 00000 n 
+0000000260 00000 n 
+0000000317 00000 n 
+0000000449 00000 n 
+0000001176 00000 n 
+trailer
+<<
+/Size 7
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+1283
+%%EOF
