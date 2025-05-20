@@ -58,6 +58,10 @@ const Contact: React.FC = () => {
           I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
           I'll try my best to get back to you!
         </p>
+        <div className="mt-4 text-portfolio-slate">
+          <p>Email: <a href="mailto:rkusalkar78@gmail.com" className="text-portfolio-green hover:underline">rkusalkar78@gmail.com</a></p>
+          <p>Phone: <a href="tel:+918446300815" className="text-portfolio-green hover:underline">+91 8446300815</a></p>
+        </div>
       </div>
       
       <div className="max-w-xl mx-auto">

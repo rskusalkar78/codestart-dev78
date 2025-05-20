@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <div className="max-w-2xl">
         <p className="font-mono text-portfolio-green mb-5 animate-fade-in opacity-0">Hi, my name is</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-lightestSlate mb-4 animate-fade-in opacity-0" style={{ animationDelay: '100ms' }}>
-          John Doe.
+          Rohan Shankar Kusalkar.
         </h1>
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-portfolio-slate mb-6 animate-fade-in opacity-0" style={{ animationDelay: '200ms' }}>
           I build things for the web.
@@ -31,8 +31,8 @@ const Hero: React.FC = () => {
         <div className="relative">
           <div className="absolute -inset-1 rounded-full bg-portfolio-green opacity-50 blur-sm"></div>
           <Avatar className="w-72 h-72 mx-auto">
-            <AvatarImage src="/lovable-uploads/c1958b3c-253b-489e-88c6-3492f7a0dc9b.png" alt="John Doe" className="object-cover" />
-            <AvatarFallback className="text-4xl">JD</AvatarFallback>
+            <AvatarImage src="/lovable-uploads/c1958b3c-253b-489e-88c6-3492f7a0dc9b.png" alt="Rohan Shankar Kusalkar" className="object-cover" />
+            <AvatarFallback className="text-4xl">RSK</AvatarFallback>
           </Avatar>
         </div>
       </div>
