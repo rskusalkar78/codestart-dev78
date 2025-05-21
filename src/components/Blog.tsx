@@ -1,122 +1,111 @@
 
 import React from 'react';
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-interface BlogPostProps {
+interface ResourceCardProps {
   title: string;
   description: string;
-  date: string;
-  image: string;
+  icon: string;
   url: string;
-  tags: string[];
 }
 
-const BlogPost: React.FC<BlogPostProps> = ({ title, description, date, image, url, tags }) => {
+const ResourceCard: React.FC<ResourceCardProps> = ({ title, description, icon, url }) => {
   return (
-    <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy overflow-hidden portfolio-card">
-      <CardContent className="p-0">
-        <div className="relative h-48">
-          <img 
-            src={image} 
-            alt={title} 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-portfolio-navy to-transparent h-1/2"></div>
-          <div className="absolute top-4 right-4 bg-portfolio-navy/80 text-portfolio-green px-2 py-1 rounded text-xs font-mono">
-            {date}
-          </div>
+    <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy h-full portfolio-card hover:shadow-lg transition-shadow duration-300">
+      <CardContent className="p-6 flex flex-col h-full">
+        <div className="mb-4 text-portfolio-green text-3xl">
+          {icon}
         </div>
         
-        <div className="p-6">
-          <h3 className="text-xl font-semibold mb-2 text-portfolio-lightestSlate line-clamp-2">
-            {title}
-          </h3>
-          
-          <p className="text-portfolio-slate mb-4 line-clamp-3">
-            {description}
-          </p>
-          
-          <div className="flex flex-wrap gap-2 mb-4">
-            {tags.map((tag, index) => (
-              <span 
-                key={index}
-                className="text-xs font-mono px-2 py-1 rounded-full bg-portfolio-navy text-portfolio-green"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-      </CardContent>
-      
-      <CardFooter className="border-t border-portfolio-lightestNavy p-4">
+        <h3 className="text-xl font-semibold mb-3 text-portfolio-lightestSlate">
+          {title}
+        </h3>
+        
+        <p className="text-portfolio-slate mb-6 flex-grow">
+          {description}
+        </p>
+        
         <Button
           asChild
           variant="link"
-          className="text-portfolio-green hover:text-portfolio-green/90 p-0"
+          className="text-portfolio-green hover:text-portfolio-green/90 p-0 self-start mt-auto"
         >
-          <a href={url} className="flex items-center gap-2">
-            Read More <ArrowRight className="w-4 h-4" />
+          <a href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            Learn More <ArrowRight className="w-4 h-4" />
           </a>
         </Button>
-      </CardFooter>
+      </CardContent>
     </Card>
   );
 };
 
 const Blog: React.FC = () => {
-  const blogPosts = [
+  const beginnerResources = [
     {
-      title: "Building a Design System from Scratch",
-      description: "Learn how to build a comprehensive design system for your projects using Figma and implement it with React components.",
-      date: "May 15, 2023",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=500",
-      url: "#",
-      tags: ["Design System", "React", "Figma"]
+      title: "Web Development Roadmap",
+      description: "A step-by-step guide to becoming a modern web developer with recommended learning resources and practice projects.",
+      icon: "🗺️",
+      url: "https://roadmap.sh/frontend"
     },
     {
-      title: "State Management in React: Context API vs Redux",
-      description: "An in-depth comparison of different state management approaches in React applications and when to use each one.",
-      date: "Mar 22, 2023",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=500",
-      url: "#",
-      tags: ["React", "State Management", "Redux"]
+      title: "Open Source Contributions",
+      description: "Learn how to contribute to open source projects, find beginner-friendly issues, and build your portfolio while giving back to the community.",
+      icon: "🌍",
+      url: "https://firstcontributions.github.io/"
     },
     {
-      title: "Building Accessible Web Applications",
-      description: "Practical tips and techniques to make your web applications more accessible and inclusive for all users.",
-      date: "Jan 10, 2023",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=500",
-      url: "#",
-      tags: ["Accessibility", "HTML", "ARIA"]
+      title: "Developer Communities",
+      description: "Join communities like Stack Overflow, DEV, and GitHub Discussions to learn from experienced developers and showcase your work.",
+      icon: "👥",
+      url: "https://dev.to/"
     }
   ];
 
   return (
     <section id="blog">
       <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading">
-        <span>04.</span> Blog
+        <span>04.</span> Resources for Beginners
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogPosts.map((post, index) => (
-          <BlogPost key={index} {...post} />
+      <div className="mb-8">
+        <p className="text-lg text-portfolio-lightSlate">
+          As a beginner software engineer, I'm constantly learning and expanding my skills. Here are some valuable resources that have helped me on my journey:
+        </p>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {beginnerResources.map((resource, index) => (
+          <ResourceCard key={index} {...resource} />
         ))}
       </div>
       
-      <div className="flex justify-center mt-12">
-        <Button
-          asChild
-          variant="outline"
-          className="border border-portfolio-green text-portfolio-green hover:bg-portfolio-green/10 py-3 px-5 flex items-center gap-2"
-        >
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            View All Posts
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </Button>
+      <div className="mt-12 bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg p-6">
+        <h3 className="text-xl font-semibold mb-4 text-portfolio-lightestSlate">My Learning Path</h3>
+        <ul className="space-y-4">
+          <li className="flex items-start">
+            <span className="text-portfolio-green mr-3 text-xl">1.</span>
+            <div>
+              <h4 className="font-semibold text-portfolio-lightestSlate">Master the Fundamentals</h4>
+              <p className="text-portfolio-slate">Focus on understanding HTML, CSS, and JavaScript deeply before moving on to frameworks.</p>
+            </div>
+          </li>
+          <li className="flex items-start">
+            <span className="text-portfolio-green mr-3 text-xl">2.</span>
+            <div>
+              <h4 className="font-semibold text-portfolio-lightestSlate">Build Projects</h4>
+              <p className="text-portfolio-slate">Create projects that solve real problems and showcase your abilities.</p>
+            </div>
+          </li>
+          <li className="flex items-start">
+            <span className="text-portfolio-green mr-3 text-xl">3.</span>
+            <div>
+              <h4 className="font-semibold text-portfolio-lightestSlate">Never Stop Learning</h4>
+              <p className="text-portfolio-slate">Technology evolves rapidly. Dedicate time each week to learning new skills and keeping up with industry trends.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   );

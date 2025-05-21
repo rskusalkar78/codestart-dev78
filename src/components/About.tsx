@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <div className="md:col-span-2">
           <div className="space-y-4 text-lg">
             <p>
-              Hello! My name is John, and I enjoy creating things that live on the internet. 
+              Hello! My name is Rohan Kusalkar, and I enjoy creating things that live on the internet. 
               My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
             </p>
             <p>
@@ -42,12 +42,42 @@ const About: React.FC = () => {
               <div className="relative aspect-square max-w-xs mx-auto rounded-lg overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=500" 
-                  alt="John Doe" 
+                  alt="Rohan Kusalkar" 
                   className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 z-10"
                 />
                 <div className="absolute inset-0 border-2 rounded-lg border-portfolio-green z-0 translate-x-3 translate-y-3 group-hover:translate-x-4 group-hover:translate-y-4 transition-all duration-300 opacity-80"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="mt-12">
+        <h3 className="text-xl font-semibold mb-6 text-portfolio-lightestSlate">Education & Certifications</h3>
+        
+        <div className="space-y-6">
+          <div className="p-6 bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg portfolio-card">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h4 className="text-portfolio-lightestSlate font-semibold">Bachelor of Engineering in Electronics and Telecommunication</h4>
+              <span className="text-portfolio-green font-mono text-sm">2024 - 2028</span>
+            </div>
+            <p className="text-portfolio-slate">Dhole Patil College of Engineering, Kharadi</p>
+          </div>
+          
+          <div className="p-6 bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg portfolio-card">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h4 className="text-portfolio-lightestSlate font-semibold">AWS Certified Solutions Architect</h4>
+              <span className="text-portfolio-green font-mono text-sm">2022</span>
+            </div>
+            <p className="text-portfolio-slate">Amazon Web Services</p>
+          </div>
+          
+          <div className="p-6 bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg portfolio-card">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h4 className="text-portfolio-lightestSlate font-semibold">Full Stack Web Development</h4>
+              <span className="text-portfolio-green font-mono text-sm">2021</span>
+            </div>
+            <p className="text-portfolio-slate">Udemy</p>
           </div>
         </div>
       </div>
