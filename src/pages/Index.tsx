@@ -13,7 +13,7 @@ import SocialSidebar from "@/components/SocialSidebar";
 
 const Index = () => {
   return (
-    <div className="bg-portfolio-navy text-portfolio-slate min-h-screen">
+    <div className="bg-slate-50 dark:bg-gray-900 text-gray-800 dark:text-gray-300 min-h-screen">
       <Navigation />
       <SocialSidebar />
       

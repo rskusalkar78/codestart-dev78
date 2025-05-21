@@ -21,14 +21,14 @@ const Resume: React.FC = () => {
   ];
 
   return (
-    <section id="resume">
-      <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading">
-        <span>06.</span> Resume
+    <section id="resume" className="bg-slate-50 dark:bg-gray-900">
+      <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading text-gray-800 dark:text-gray-200">
+        <span className="text-indigo-600 dark:text-indigo-400">06.</span> Resume
       </h2>
       
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
         <div>
-          <p className="text-portfolio-lightSlate text-lg mb-4">
+          <p className="text-gray-600 dark:text-gray-300 text-lg mb-4">
             As a fresher in the field of software development, I'm enthusiastic about learning and growing. Here's a snapshot of my educational background and interests.
           </p>
         </div>
@@ -36,7 +36,7 @@ const Resume: React.FC = () => {
         <Button
           asChild
           variant="outline"
-          className="border border-portfolio-green text-portfolio-green hover:bg-portfolio-green/10 py-3 px-5 flex items-center gap-2 whitespace-nowrap"
+          className="border border-indigo-500 text-indigo-600 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 py-3 px-5 flex items-center gap-2 whitespace-nowrap"
         >
           <a href="/resume.pdf" download="Rohan_Shankar_Kusalkar_Resume.pdf">
             <Download className="w-4 h-4" />
@@ -48,57 +48,57 @@ const Resume: React.FC = () => {
       <div className="space-y-6">
         <iframe
           src="/resume.pdf#toolbar=0"
-          className="w-full h-96 mb-8 rounded-lg border border-portfolio-lightestNavy hidden md:block"
+          className="w-full h-96 mb-8 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hidden md:block"
           title="Resume Preview"
         ></iframe>
         
         <div className="md:hidden">
-          <p className="text-portfolio-lightSlate italic mb-4 text-center">
+          <p className="text-gray-500 dark:text-gray-400 italic mb-4 text-center">
             Resume preview is available on larger screens. Please download to view on mobile.
           </p>
         </div>
         
-        <h3 className="text-xl font-semibold text-portfolio-lightestSlate mb-6">
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
           Education
         </h3>
         
-        <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy portfolio-card">
+        <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all">
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row justify-between mb-3">
-              <h4 className="text-lg font-semibold text-portfolio-lightestSlate">
+              <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Bachelor of Engineering in Electronics and Telecommunication
               </h4>
-              <span className="text-portfolio-green font-mono text-sm">
+              <span className="text-indigo-600 dark:text-indigo-400 font-mono text-sm">
                 2024 - 2028
               </span>
             </div>
-            <p className="text-portfolio-slate mb-4">Dhole Patil College of Engineering, Kharadi</p>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">Dhole Patil College of Engineering, Kharadi</p>
           </CardContent>
         </Card>
         
-        <h3 className="text-xl font-semibold text-portfolio-lightestSlate mb-6 mt-8">
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-6 mt-8">
           Interests & Technologies
         </h3>
         
         <div className="space-y-6">
           {interests.map((interest, index) => (
-            <Card key={index} className="bg-portfolio-lightNavy border-portfolio-lightestNavy portfolio-card">
+            <Card key={index} className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row justify-between mb-3">
-                  <h4 className="text-lg font-semibold text-portfolio-lightestSlate">
+                  <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
                     {interest.title}
                   </h4>
-                  <span className="text-portfolio-green font-mono text-sm">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-mono text-sm">
                     {interest.period}
                   </span>
                 </div>
                 
-                <p className="text-portfolio-slate mb-4">{interest.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">{interest.description}</p>
                 
                 <ul className="space-y-2">
                   {interest.technologies.map((technology, i) => (
-                    <li key={i} className="flex text-portfolio-slate">
-                      <span className="text-portfolio-green mr-2">▹</span>
+                    <li key={i} className="flex text-gray-600 dark:text-gray-400">
+                      <span className="text-indigo-500 dark:text-indigo-400 mr-2">▹</span>
                       <span>{technology}</span>
                     </li>
                   ))}
@@ -108,12 +108,12 @@ const Resume: React.FC = () => {
           ))}
         </div>
         
-        <div className="mt-8 p-6 bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg">
-          <h4 className="text-lg font-semibold text-portfolio-lightestSlate mb-4">As a Beginner</h4>
-          <p className="text-portfolio-slate mb-4">
+        <div className="mt-8 p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+          <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">As a Beginner</h4>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
             I'm at the start of my software development journey, eager to learn and apply new technologies. While I don't have professional experience yet, I'm committed to continuous learning through online courses, personal projects, and practice.
           </p>
-          <p className="text-portfolio-slate">
+          <p className="text-gray-600 dark:text-gray-400">
             I'm currently focusing on building a strong foundation in web development fundamentals and looking for opportunities to collaborate on meaningful projects.
           </p>
         </div>
