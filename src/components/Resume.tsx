@@ -1,39 +1,21 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Download } from "lucide-react";
 
 const Resume: React.FC = () => {
-  // These would be real work experiences in a production portfolio
-  const experiences = [
+  // Replace work experiences with interests and technologies
+  const interests = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Solutions Inc.",
-      period: "January 2021 - Present",
-      responsibilities: [
-        "Lead the development of a React-based SaaS platform with over 50,000 users.",
-        "Implemented CI/CD pipeline resulting in 40% faster deployment times.",
-        "Mentored junior developers and conducted code reviews to ensure code quality."
-      ]
-    },
-    {
-      title: "Frontend Developer",
-      company: "Web Creations",
-      period: "March 2018 - December 2020",
-      responsibilities: [
-        "Developed responsive web applications using React, Redux, and TypeScript.",
-        "Collaborated with UX designers to implement user-friendly interfaces.",
-        "Optimized application performance resulting in 30% faster load times."
-      ]
-    },
-    {
-      title: "Web Developer Intern",
-      company: "Digital Agency",
-      period: "June 2017 - February 2018",
-      responsibilities: [
-        "Assisted in the development of client websites using HTML, CSS, and JavaScript.",
-        "Created and maintained documentation for internal processes.",
-        "Participated in team meetings and contributed to project planning."
+      title: "Web Development",
+      period: "2024 - Present",
+      description: "Passionate about creating responsive and interactive web applications.",
+      technologies: [
+        "HTML5 - Building the structure of web pages",
+        "CSS3 - Styling and responsive design",
+        "Node.js - Backend development",
+        "Data Structures & Algorithms - Problem-solving"
       ]
     }
   ];
@@ -47,7 +29,7 @@ const Resume: React.FC = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
         <div>
           <p className="text-portfolio-lightSlate text-lg mb-4">
-            Here's a brief overview of my professional experience. For a more detailed version, please download my full resume.
+            As a fresher in the field of software development, I'm enthusiastic about learning and growing. Here's a snapshot of my educational background and interests.
           </p>
         </div>
         
@@ -77,35 +59,63 @@ const Resume: React.FC = () => {
         </div>
         
         <h3 className="text-xl font-semibold text-portfolio-lightestSlate mb-6">
-          Work Experience
+          Education
+        </h3>
+        
+        <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy portfolio-card">
+          <CardContent className="p-6">
+            <div className="flex flex-col md:flex-row justify-between mb-3">
+              <h4 className="text-lg font-semibold text-portfolio-lightestSlate">
+                Bachelor of Engineering in Electronics and Telecommunication
+              </h4>
+              <span className="text-portfolio-green font-mono text-sm">
+                2024 - 2028
+              </span>
+            </div>
+            <p className="text-portfolio-slate mb-4">Dhole Patil College of Engineering, Kharadi</p>
+          </CardContent>
+        </Card>
+        
+        <h3 className="text-xl font-semibold text-portfolio-lightestSlate mb-6 mt-8">
+          Interests & Technologies
         </h3>
         
         <div className="space-y-6">
-          {experiences.map((experience, index) => (
+          {interests.map((interest, index) => (
             <Card key={index} className="bg-portfolio-lightNavy border-portfolio-lightestNavy portfolio-card">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row justify-between mb-3">
                   <h4 className="text-lg font-semibold text-portfolio-lightestSlate">
-                    {experience.title}
+                    {interest.title}
                   </h4>
                   <span className="text-portfolio-green font-mono text-sm">
-                    {experience.period}
+                    {interest.period}
                   </span>
                 </div>
                 
-                <p className="text-portfolio-lightSlate mb-4">{experience.company}</p>
+                <p className="text-portfolio-slate mb-4">{interest.description}</p>
                 
                 <ul className="space-y-2">
-                  {experience.responsibilities.map((responsibility, i) => (
+                  {interest.technologies.map((technology, i) => (
                     <li key={i} className="flex text-portfolio-slate">
                       <span className="text-portfolio-green mr-2">▹</span>
-                      <span>{responsibility}</span>
+                      <span>{technology}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="mt-8 p-6 bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg">
+          <h4 className="text-lg font-semibold text-portfolio-lightestSlate mb-4">As a Beginner</h4>
+          <p className="text-portfolio-slate mb-4">
+            I'm at the start of my software development journey, eager to learn and apply new technologies. While I don't have professional experience yet, I'm committed to continuous learning through online courses, personal projects, and practice.
+          </p>
+          <p className="text-portfolio-slate">
+            I'm currently focusing on building a strong foundation in web development fundamentals and looking for opportunities to collaborate on meaningful projects.
+          </p>
         </div>
       </div>
     </section>
