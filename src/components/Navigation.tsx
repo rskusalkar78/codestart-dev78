@@ -14,9 +14,9 @@ const NavLink = ({ href, children, index }: NavLinkProps) => {
     <li className="animate-fade-in opacity-0" style={{ animationDelay: `${index * 100}ms` }}>
       <a 
         href={href}
-        className="flex items-center gap-1 text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 py-2 px-3 transition-colors"
+        className="flex items-center gap-1 text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white py-2 px-3 transition-colors"
       >
-        <span className="text-indigo-600 dark:text-indigo-400 font-mono text-xs">0{index}.</span>
+        <span className="text-black dark:text-white font-mono text-xs">0{index}.</span>
         <span>{children}</span>
       </a>
     </li>
@@ -44,11 +44,11 @@ const Navigation: React.FC = () => {
     <header 
       className={cn(
         "fixed top-0 w-full z-50 px-6 py-4 md:px-12 lg:px-20 transition-all duration-300", 
-        isScrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-white/90 dark:bg-black/90 backdrop-blur shadow-lg" : "bg-transparent"
       )}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
-        <a href="#" className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 animate-fade-in opacity-0 font-mono">profilet</a>
+        <a href="#" className="text-3xl font-bold text-black dark:text-white animate-fade-in opacity-0 font-mono">profilet</a>
         
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center space-x-2">
@@ -61,7 +61,7 @@ const Navigation: React.FC = () => {
             <Button 
               asChild
               variant="outline"
-              className="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-900/20 transition-all ml-2"
+              className="border border-black text-black hover:bg-black/5 dark:border-white dark:text-white dark:hover:bg-white/10 transition-all ml-2"
             >
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </Button>
@@ -70,7 +70,7 @@ const Navigation: React.FC = () => {
         
         {/* Mobile menu button */}
         <button 
-          className="md:hidden text-indigo-600 dark:text-indigo-400 focus:outline-none"
+          className="md:hidden text-black dark:text-white focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -94,7 +94,7 @@ const Navigation: React.FC = () => {
       {/* Mobile Menu */}
       <div 
         className={cn(
-          "fixed inset-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur-lg z-40 flex flex-col justify-center items-center transition-transform duration-300 md:hidden",
+          "fixed inset-0 bg-white/95 dark:bg-black/95 backdrop-blur-lg z-40 flex flex-col justify-center items-center transition-transform duration-300 md:hidden",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -109,10 +109,10 @@ const Navigation: React.FC = () => {
             <li key={link.href}>
               <a 
                 href={link.href} 
-                className="flex flex-col items-center text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 p-2"
+                className="flex flex-col items-center text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white p-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className="text-indigo-600 dark:text-indigo-400 font-mono text-sm">0{i+1}.</span>
+                <span className="text-black dark:text-white font-mono text-sm">0{i+1}.</span>
                 <span>{link.text}</span>
               </a>
             </li>
@@ -121,7 +121,7 @@ const Navigation: React.FC = () => {
             <Button 
               asChild
               variant="outline"
-              className="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-900/20"
+              className="border border-black text-black hover:bg-black/5 dark:border-white dark:text-white dark:hover:bg-white/10"
               onClick={() => setIsMenuOpen(false)}
             >
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>

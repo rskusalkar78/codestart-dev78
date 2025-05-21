@@ -64,14 +64,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				portfolio: {
-					navy: '#0A192F',
-					lightNavy: '#112240', 
-					lightestNavy: '#233554',
-					slate: '#8892B0',
-					lightSlate: '#A8B2D1',
-					lightestSlate: '#CCD6F6',
-					white: '#E6F1FF',
-					green: '#64FFDA',
+					navy: '#121212', 
+					lightNavy: '#1f1f1f', 
+					lightestNavy: '#2a2a2a',
+					slate: '#a0a0a0',
+					lightSlate: '#c0c0c0',
+					lightestSlate: '#e0e0e0',
+					white: '#ffffff',
+					green: '#ffffff',
 				},
 			},
 			borderRadius: {
@@ -113,8 +113,9 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out forwards'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				mono: ['Fira Code', 'monospace'],
+				sans: ['Montserrat', 'sans-serif'],
+				mono: ['Roboto Mono', 'monospace'],
+				heading: ['Playfair Display', 'serif'],
 			}
 		}
 	},
