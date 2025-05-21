@@ -48,7 +48,7 @@ const Navigation: React.FC = () => {
       )}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
-        <a href="#" className="text-3xl font-bold text-black dark:text-white animate-fade-in opacity-0 font-mono">profilet</a>
+        <a href="#" className="text-3xl font-bold text-black dark:text-white animate-fade-in opacity-0 font-mono">CodeStart.dev</a>
         
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center space-x-2">

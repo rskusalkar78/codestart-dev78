@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Projects: React.FC = () => {
   return (
@@ -19,12 +19,11 @@ const Projects: React.FC = () => {
         </p>
         <Button
           asChild
-          variant="outline"
-          className="border border-portfolio-green text-portfolio-green hover:bg-portfolio-green/10 py-3 px-5 flex items-center gap-2"
+          className="bg-black text-white dark:bg-white dark:text-black hover:bg-black/80 dark:hover:bg-white/80 py-3 px-5 flex items-center gap-2 animate-pulse"
         >
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <Github className="w-5 h-5" />
             View My GitHub
-            <ArrowRight className="w-4 h-4" />
           </a>
         </Button>
       </div>
