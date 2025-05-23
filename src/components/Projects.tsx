@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       
       <div className="flex flex-col items-center justify-center py-16 text-center backdrop-blur-sm bg-white/30 dark:bg-black/30 rounded-lg">
         <h3 className="font-semibold mb-4 text-zinc-950 text-3xl">Coming Soon!!</h3>
-        <p className="text-portfolio-slate max-w-xl mb-8">
+        <p className="max-w-xl mb-8 text-zinc-950">
           I'm currently working on some exciting projects. Check back soon to see what I've been building!
         </p>
         <Button asChild className="bg-black text-white dark:bg-white dark:text-black hover:bg-black/80 dark:hover:bg-white/80 py-3 px-5 flex items-center gap-2 animate-pulse">
