@@ -7,10 +7,10 @@ const Hero: React.FC = () => {
         <p className="font-mono text-black dark:text-white mb-5 animate-fade-in opacity-0 text-base"></p>
         <h1 style={{
         animationDelay: '100ms'
-      }} className="text-4xl lg:text-7xl text-black dark:text-white mb-4 animate-fade-in opacity-0 md:text-6xl font-bold">Rohan Shankar Kusalkar.</h1>
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-700 dark:text-gray-300 mb-6 animate-fade-in opacity-0" style={{
+      }} className="text-4xl lg:text-7xl mb-4 animate-fade-in opacity-0 font-bold text-gray-950 md:text-4xl">Rohan Shankar Kusalkar.</h1>
+        <h2 style={{
         animationDelay: '200ms'
-      }}>
+      }} className="text-3xl lg:text-6xl mb-6 animate-fade-in opacity-0 md:text-2xl font-bold text-zinc-500">
           I build things for the web.
         </h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-xl text-lg mb-12 animate-fade-in opacity-0" style={{
