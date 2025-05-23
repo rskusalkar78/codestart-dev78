@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       }} className="text-4xl lg:text-7xl mb-4 animate-fade-in opacity-0 font-bold text-gray-950 mx-0 md:text-5xl">Rohan Shankar Kusalkar.</h1>
         <h2 style={{
         animationDelay: '200ms'
-      }} className="text-3xl lg:text-6xl mb-6 animate-fade-in opacity-0 md:text-2xl font-bold text-gray-950">I build things from scratch to web!</h2>
+      }} className="text-3xl lg:text-6xl mb-6 animate-fade-in opacity-0 font-bold text-gray-950 md:text-xl">I build things from scratch to web!</h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-xl text-lg mb-12 animate-fade-in opacity-0" style={{
         animationDelay: '300ms'
       }}>
