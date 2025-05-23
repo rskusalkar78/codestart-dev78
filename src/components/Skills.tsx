@@ -1,64 +1,46 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-
 interface SkillCategoryProps {
   title: string;
   skills: string[];
 }
-
-const SkillCategory: React.FC<SkillCategoryProps> = ({ title, skills }) => {
-  return (
-    <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy portfolio-card">
+const SkillCategory: React.FC<SkillCategoryProps> = ({
+  title,
+  skills
+}) => {
+  return <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy portfolio-card">
       <CardContent className="p-6">
         <h3 className="text-xl font-semibold mb-4 text-portfolio-lightestSlate">{title}</h3>
         <ul className="space-y-2">
-          {skills.map((skill, index) => (
-            <li key={index} className="flex items-center text-portfolio-lightSlate">
+          {skills.map((skill, index) => <li key={index} className="flex items-center text-portfolio-lightSlate">
               <span className="text-portfolio-green mr-2">▹</span>
               {skill}
-            </li>
-          ))}
+            </li>)}
         </ul>
       </CardContent>
-    </Card>
-  );
+    </Card>;
 };
-
 const Skills: React.FC = () => {
-  const skillCategories = [
-    {
-      title: "Languages",
-      skills: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3/SCSS", "Python", "SQL"]
-    },
-    {
-      title: "Frontend",
-      skills: ["React", "Redux", "Next.js", "Tailwind CSS", "Material UI", "Framer Motion"]
-    },
-    {
-      title: "Backend",
-      skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"]
-    },
-    {
-      title: "Tools",
-      skills: ["Git", "GitHub", "VS Code", "Figma", "Docker", "CI/CD", "AWS"]
-    }
-  ];
-
-  return (
-    <section id="skills">
+  const skillCategories = [{
+    title: "Languages",
+    skills: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3/SCSS", "Python", "SQL"]
+  }, {
+    title: "Frontend",
+    skills: ["React", "Redux", "Next.js", "Tailwind CSS", "Material UI", "Framer Motion"]
+  }, {
+    title: "Backend",
+    skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"]
+  }, {
+    title: "Tools",
+    skills: ["Git", "GitHub", "VS Code", "Figma", "Docker", "CI/CD", "AWS"]
+  }];
+  return <section id="skills">
       <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading">
-        <span>02.</span> Skills
+        <span className="font-extralight text-2xl">02.</span> Skills
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {skillCategories.map((category, index) => (
-          <SkillCategory
-            key={index}
-            title={category.title}
-            skills={category.skills}
-          />
-        ))}
+        {skillCategories.map((category, index) => <SkillCategory key={index} title={category.title} skills={category.skills} />)}
       </div>
       
       <div className="mt-12">
@@ -90,8 +72,6 @@ const Skills: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Skills;

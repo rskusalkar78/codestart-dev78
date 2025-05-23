@@ -4,7 +4,7 @@ import { Github } from "lucide-react";
 const Projects: React.FC = () => {
   return <section id="projects">
       <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading">
-        <span className="text-3xl text-zinc-950 font-extralight">3.</span> Projects
+        <span className="text-zinc-950 font-extralight text-2xl">03.</span> Projects
       </h2>
       
       <div className="flex flex-col items-center justify-center py-16 text-center">

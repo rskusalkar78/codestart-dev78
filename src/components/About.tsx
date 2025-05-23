@@ -1,11 +1,8 @@
-
 import React from 'react';
-
 const About: React.FC = () => {
-  return (
-    <section id="about">
+  return <section id="about">
       <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading">
-        <span>01.</span> About Me
+        <span className="text-2xl font-normal">01.</span> About Me
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -26,11 +23,9 @@ const About: React.FC = () => {
             </p>
             
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2 mt-4 font-mono text-sm">
-              {['JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 'Next.js', 'Tailwind CSS'].map((tech, index) => (
-                <li key={index} className="flex items-center before:content-['▹'] before:text-portfolio-green before:mr-2">
+              {['JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 'Next.js', 'Tailwind CSS'].map((tech, index) => <li key={index} className="flex items-center before:content-['▹'] before:text-portfolio-green before:mr-2">
                   {tech}
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
@@ -40,11 +35,7 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-0.5 rounded-lg bg-portfolio-green opacity-50 blur-sm group-hover:opacity-75 transition duration-300"></div>
               <div className="relative aspect-square max-w-xs mx-auto rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=500" 
-                  alt="Professional Developer" 
-                  className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 z-10"
-                />
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=500" alt="Professional Developer" className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 z-10" />
                 <div className="absolute inset-0 border-2 rounded-lg border-portfolio-green z-0 translate-x-3 translate-y-3 group-hover:translate-x-4 group-hover:translate-y-4 transition-all duration-300 opacity-80"></div>
               </div>
             </div>
@@ -81,8 +72,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
