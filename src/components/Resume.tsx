@@ -48,7 +48,7 @@ const Resume: React.FC = () => {
       <div className="space-y-6">
         <iframe
           src="/resume.pdf#toolbar=0"
-          className="w-full h-96 mb-8 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hidden md:block"
+          className="w-full h-96 mb-8 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hidden md:block font-serif"
           title="Resume Preview"
         ></iframe>
         
@@ -58,25 +58,25 @@ const Resume: React.FC = () => {
           </p>
         </div>
         
-        <h3 className="text-xl font-semibold text-black dark:text-white mb-6">
+        <h3 className="text-xl font-semibold text-black dark:text-white mb-6 font-serif">
           Education
         </h3>
         
         <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 shadow-md hover:shadow-lg transition-all">
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row justify-between mb-3">
-              <h4 className="text-lg font-semibold text-black dark:text-white font-heading">
+              <h4 className="text-lg font-semibold text-black dark:text-white font-serif">
                 Bachelor of Engineering in Electronics and Telecommunication
               </h4>
               <span className="text-black dark:text-white font-mono text-sm">
                 2024 - 2028
               </span>
             </div>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">Dhole Patil College of Engineering, Kharadi</p>
+            <p className="text-gray-700 dark:text-gray-300 mb-4 font-serif">Dhole Patil College of Engineering, Kharadi</p>
           </CardContent>
         </Card>
         
-        <h3 className="text-xl font-semibold text-black dark:text-white mb-6 mt-8 font-heading">
+        <h3 className="text-xl font-semibold text-black dark:text-white mb-6 mt-8 font-serif">
           Interests & Technologies
         </h3>
         
@@ -85,7 +85,7 @@ const Resume: React.FC = () => {
             <Card key={index} className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 shadow-md hover:shadow-lg transition-all">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row justify-between mb-3">
-                  <h4 className="text-lg font-semibold text-black dark:text-white font-heading">
+                  <h4 className="text-lg font-semibold text-black dark:text-white font-serif">
                     {interest.title}
                   </h4>
                   <span className="text-black dark:text-white font-mono text-sm">
@@ -93,11 +93,11 @@ const Resume: React.FC = () => {
                   </span>
                 </div>
                 
-                <p className="text-gray-700 dark:text-gray-300 mb-4">{interest.description}</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-4 font-serif">{interest.description}</p>
                 
                 <ul className="space-y-2">
                   {interest.technologies.map((technology, i) => (
-                    <li key={i} className="flex text-gray-700 dark:text-gray-300">
+                    <li key={i} className="flex text-gray-700 dark:text-gray-300 font-serif">
                       <span className="text-black dark:text-white mr-2">▹</span>
                       <span>{technology}</span>
                     </li>
@@ -109,11 +109,11 @@ const Resume: React.FC = () => {
         </div>
         
         <div className="mt-8 p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-md">
-          <h4 className="text-lg font-semibold text-black dark:text-white mb-4 font-heading">As a Beginner</h4>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
+          <h4 className="text-lg font-semibold text-black dark:text-white mb-4 font-serif">As a Beginner</h4>
+          <p className="text-gray-700 dark:text-gray-300 mb-4 font-serif">
             I'm at the start of my software development journey, eager to learn and apply new technologies. While I don't have professional experience yet, I'm committed to continuous learning through online courses, personal projects, and practice.
           </p>
-          <p className="text-gray-700 dark:text-gray-300">
+          <p className="text-gray-700 dark:text-gray-300 font-serif">
             I'm currently focusing on building a strong foundation in web development fundamentals and looking for opportunities to collaborate on meaningful projects.
           </p>
         </div>

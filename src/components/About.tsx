@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <div className="space-y-4 text-lg">
             <p>
               Hello! My name is Rohan Kusalkar, and I enjoy creating things that live on the internet. 
-              My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+              My interest in web development started back in 2024 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
             </p>
             <p>
               Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.
@@ -41,8 +41,8 @@ const About: React.FC = () => {
               <div className="absolute -inset-0.5 rounded-lg bg-portfolio-green opacity-50 blur-sm group-hover:opacity-75 transition duration-300"></div>
               <div className="relative aspect-square max-w-xs mx-auto rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=500" 
-                  alt="Rohan Kusalkar" 
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=500" 
+                  alt="Professional Developer" 
                   className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 z-10"
                 />
                 <div className="absolute inset-0 border-2 rounded-lg border-portfolio-green z-0 translate-x-3 translate-y-3 group-hover:translate-x-4 group-hover:translate-y-4 transition-all duration-300 opacity-80"></div>
