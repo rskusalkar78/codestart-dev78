@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Hero: React.FC = () => {
   return <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-between pt-16 gap-8">
-      <div className="max-w-2xl">
+      <div className="max-w-2xl backdrop-blur-sm bg-white/30 dark:bg-black/30 p-8 rounded-lg">
         <p className="font-mono text-black dark:text-white mb-5 animate-fade-in opacity-0 text-base"></p>
         <h1 style={{
         animationDelay: '100ms'
@@ -11,7 +12,7 @@ const Hero: React.FC = () => {
         <h2 style={{
         animationDelay: '200ms'
       }} className="text-3xl lg:text-6xl mb-6 animate-fade-in opacity-0 font-bold text-gray-950 md:text-xl">I build things from scratch to web!</h2>
-        <p className="text-gray-600 dark:text-gray-400 max-w-xl text-lg mb-12 animate-fade-in opacity-0" style={{
+        <p className="text-gray-700 dark:text-gray-300 max-w-xl text-lg mb-12 animate-fade-in opacity-0" style={{
         animationDelay: '300ms'
       }}>
           I'm a software developer specializing in building exceptional digital experiences. 
@@ -20,7 +21,7 @@ const Hero: React.FC = () => {
         <div className="animate-fade-in opacity-0" style={{
         animationDelay: '400ms'
       }}>
-          <Button asChild className="bg-transparent hover:bg-black/10 dark:hover:bg-white/10 border border-black dark:border-white text-black dark:text-white py-4 px-7 text-base">
+          <Button asChild className="bg-transparent hover:bg-black/20 dark:hover:bg-white/20 border border-black dark:border-white text-black dark:text-white py-4 px-7 text-base">
             <a href="#projects">Check out my work!</a>
           </Button>
         </div>

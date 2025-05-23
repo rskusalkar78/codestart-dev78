@@ -95,6 +95,10 @@
   body {
     @apply bg-white dark:bg-black text-gray-800 dark:text-gray-300;
     scroll-behavior: smooth;
+    background-image: url('/lovable-uploads/8847c864-06fa-4d56-8dc0-dc609348b39f.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
 
   html {

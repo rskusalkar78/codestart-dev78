@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
@@ -7,7 +8,7 @@ const Projects: React.FC = () => {
         <span className="text-zinc-950 font-extralight text-2xl">03.</span> Projects
       </h2>
       
-      <div className="flex flex-col items-center justify-center py-16 text-center">
+      <div className="flex flex-col items-center justify-center py-16 text-center backdrop-blur-sm bg-white/30 dark:bg-black/30 rounded-lg">
         <h3 className="text-xl font-semibold mb-4 text-portfolio-lightestSlate">
           Coming Soon
         </h3>
