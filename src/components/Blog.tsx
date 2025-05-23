@@ -15,12 +15,12 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
   url
 }) => {
   return <Card className="bg-portfolio-lightNavy border-portfolio-lightestNavy h-full portfolio-card hover:shadow-lg transition-shadow duration-300">
-      <CardContent className="p-6 flex flex-col h-full">
-        <div className="mb-4 text-portfolio-green text-3xl">
+      <CardContent className="p-6 flex flex-col h-full bg-zinc-950">
+        <div className="mb-4 text-portfolio-green text-3xl bg-zinc-950">
           {icon}
         </div>
         
-        <h3 className="text-xl font-semibold mb-3 text-portfolio-lightestSlate">
+        <h3 className="text-xl font-semibold mb-3 text-zinc-50">
           {title}
         </h3>
         
